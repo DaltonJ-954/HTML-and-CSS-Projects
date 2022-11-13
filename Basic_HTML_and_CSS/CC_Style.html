@@ -63,4 +63,46 @@ h1 {
     background: #00b200;
 }
 
+/* ---------------------------------------------
+     HOVER, TRANSLATE, & TRANSFORM EFFECT
+------------------------------------------------*/
+.container .square:nth-child(-n+4):hover {
+    background-image: url("../images/icons/smileyface1.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+}
+
+.squares:nth-child(1):hover {
+    background: #13b4ff;
+}
+
+.squares:nth-child(2):hover {
+    background: #d861af;
+}
+
+.squares:nth-child(3):hover {
+    background: #81205f;
+}
+
+.squares:nth-child(4):hover {
+    background: #77b800;
+}
+
+/* ----------------------------------------------
+     ANIMATION EFFECT
+-------------------------------------------------*/
+@keyframes {
+    %0, 100% {
+        transform: translaterY(0px) ;
+        background-image: url("../images/icons/smileyface1.png")
+    }
+    50% {
+        transform: translaterY(300px);
+    }
+    
+}
+
 
