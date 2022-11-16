@@ -47,7 +47,7 @@ P {
     }
 
     .white-head {
-        columns: #C9BDAA;
+        color: #C9BDAA;
         margin-top: 5%;
         line-height: 30px;
         padding-bottom: 20px;
@@ -56,7 +56,7 @@ P {
     PHOTO OVERLAY TRANSITION
 ------------------------------------*/
 
--photo-overlay {
+.photo-overlay {
     opacity: 0;
     transition: opacity .1s;
     border-radius: 10px;
