@@ -1,0 +1,30 @@
+img {
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: middle;
+    box-shadow: 5px 5px 14px orange;
+    size: 50% 50%;
+}
+
+body {
+    background-color: mediumaquamarine;
+    font-size: 21px;
+}
+
+input {
+    border-style: solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: 15px;
+}
+
+label {
+    display: inline-block;
+    margin: 17px;
+    text-align: center;
+  }
+
+  ul, ol {
+    list-style-type: none;
+  }
