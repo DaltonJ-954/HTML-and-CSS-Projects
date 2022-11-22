@@ -6,3 +6,16 @@ span {
 .Class_A {
 color: crimson;
 }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: crimson;
+}
+
+.Go Seminoles {
+  font-size: 25px;
+  position: relative;
+  bottom: 10px;
+  left: 15px;
+}

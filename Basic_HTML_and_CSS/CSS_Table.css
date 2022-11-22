@@ -1,5 +1,5 @@
 table {
-    border: 1px solid silver;
+    border: 5px solid goldenrod;
 }
 
 td:hover {
@@ -8,11 +8,12 @@ td:hover {
 
 tr, th {
     background-color: purple;
-	color: yellow;
+	color: goldenrod;
+    padding: 6px 6px 6px;
 }
 
 tr, td {
-    background-color: darkgreen;
-	color: white;
+    background-color: goldenrod;
+	color: purple;
+    padding: 15px 15px 15px;
 }
-<link rel="stylesheet" type="text/css" href="Roman.css">
