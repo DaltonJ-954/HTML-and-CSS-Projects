@@ -11,7 +11,8 @@ This new repository is for future projects in this course.
 This page was made showing css that styled the navMenu, Keyframes and columns.
 
 ## Space Station
-This page is an example home page for viewing art of Atlantis from different times in it's existance. CSS was used to stylize image containers, navbar, and form.
+This page is an example home page for viewing art of Atlantis from different times in it's existance. 
+CSS was used to stylize image containers, navbar, and form.
 
 
 
