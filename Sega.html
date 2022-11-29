@@ -5,12 +5,13 @@
 </head>
 <style>
 p {
-   font-style: normal;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-weight: 200;
    color: black;
 }
 
 h1 {
+   padding: 10px;
    color: blue;
    text-shadow: 5px 5px 4px red, 0 0 10px orange;
 }
@@ -21,10 +22,35 @@ img {
    display: block;
    margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   width: 35%;
 }
+
+img:hover {
+   transform: scale(1.1);
+   transition: transform 1s;
+   transform-origin: 50% 50%;
+}
+
+body {
+   background-color: peachpuff;
+}
+
+.photo-container {
+   text-align: center;
+   
+}
+
+
 </style>
 <body>
+
+   <label for="options">Console Options:</label>
+         <select name="options" id="options">
+            <option value="master system">Master system</option>
+            <option value="genesis">Genesis</option>
+            <option value="saturn">Saturn</option>
+            <option value="dreamcast">Dreamcast</option>
+         </select>
 
 <h1>Is Sonic the Hedgehog BACK?!</h1>
 <p>Since it's debut in 1991, Sonic has been a popular character in the gamesphere.
@@ -36,10 +62,18 @@ img {
    So many ideas were used to spark interest in later versions but nothing seemed to remedy the problems that persisted.
    Well let's fast forward to 'Sonic Frontiers ...</p>
    
-                    <p><img src="Frontiers.jpg"></p>
+   <div class="photo-container">				
+      <div class="photo">
+         <img src="./img/Frontiers.jpg" alt="Sonic">
+         <div class="photo-overlay">
+            <h3>Click to Enlarge</h3>
+            <p>Let's hope this edition to the series gives the franchise the jumpstartt it needs.</p>
+         </div>
+      </div>
+   </div>
    
    
-   <p>Let's hope this edition to the series gives the franchise the jumpstartt it needs.</p>
+   
 <footer>
    <nav>
       <a href="Sega.html">HOME</a>

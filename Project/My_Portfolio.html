@@ -4,68 +4,67 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>Your Name Here</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <title>Dalton J. Walls</title>
+        <link rel="stylesheet" type="text/css" href="../Project/css/portfolio.css">
+        <style>
+        video {
+            width: 100%;
+            height: 100%;
+        }
+        </style>
     </head>
 
     <!--Body-->
     <body class="Background">
-        
+        <nav class="navMenu">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <div class="dot"></div>
+          </nav>
         <!--Navbar-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
-        </div>
-
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br>
-        <br>
+        
 
         <!--Background video-->
         <div id="Home">
-            <video autoplay muted loop id="Typing_Video">
-                <source src="images/video/Typing.mp4" type="video/mp4">
+            <video autoplay muted loop id="video">
+                <source src="../Project/Blurry Video Of People Working.mp4" type="video/mp4">
                 <!--Display message if video fails to run-->
                 Your browser does not support HTML5 video.
             </video>
         </div>
 
-        <!--Video text-->
-        <div class="Video_Text">
-            <h1 class="white-text">Your Name's Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
-                    </q>
-                    <br> -Joseph Weizenbaum
-                    <br>
-                    <br> My name is ____. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                    <br>
-                    <br> Thank you for stopping by and enjoy! 
-                </p>
-            </strong>
-        </div>
-
+        
+       <!--Video text-->
+       <div class="Video_Text">
+        <h1 class="white-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Dalton's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>If you want to experience significant progress toward your goal, you need to be intentional about the work you’re doing every day.” 
+                </q>
+                <br> - Elon Musk
+                <br>
+                <br> My name is Dalton Walls. Welcome to my portfolio website. With it, I'll give insight on past experiences, present and future goals.
+                <br>
+                <br> Thank you for stopping by and enjoy! 
+            </p>
+        </strong>
+    </div> 
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
             <div class="Column_2">
-                <img width="100%" height="500px" src="../Golden.jpg" alt="sunset">
+                <img width="100%" height="500px" src="../img/questionm.jpg" alt="About">
             </div>
             <!--Right column-->
             <div class="Column_1">
                 <h1>About</h1>
-                <p>
-                    I am a software developer who loves to code! As a father of two, I enjoy time with my family and traveling. 
+                <p>I'm an aspiring software developer with a passion to code in every facet possible! I love to fish, learning astronomy and <strong>ALL</strong> aspects to programming.
                     <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>I am presently a student at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp studying in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
                     <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
-                </p>
+                    <br>My desire to code will propel me to a future that is as bright as my hard work leads me. <a href="#Contact">Contact</a> me below for more info!</p>
             </div>
         </div>
 
@@ -75,14 +74,14 @@
             <div class="Column_1">
                 <h1>GitHub</h1>
                 <p>
-                    You can view my coding projects on my GitHub profile here:
+                    You can view all of my coding projects on my GitHub profile here:
                     <br>
                     <p class="center"><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy Github</a></p>
                 </p>
             </div>
             <!--Right column-->
             <div class="Column_2">
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="../img/github_4.jpg" alt="GitHub Logo"></a>
             </div>
         </div>
 
@@ -90,7 +89,7 @@
         <div class="Row" id="Contact">
             <!--Contact image, left column-->
             <div class="Column_2 Column_tall">
-                <img src="images/html_custom.png" alt="Contact_Image">
+                <img src="../img/contact_2.jpg" alt="Contact_Image">
             </div>
             <!--Contact form, right column-->
             <div class="Column_1 Column_tall">
