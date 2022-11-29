@@ -2,4 +2,3 @@
  Repository for new course
 This new repository is for future projects in this course.
 # Project
-``strikethrough``
