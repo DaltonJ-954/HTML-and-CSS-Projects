@@ -14,6 +14,9 @@ This page was made showing css that styled the navMenu, Keyframes and columns.
 This page is an example home page for viewing art of Atlantis from different times in it's existance. 
 CSS was used to stylize image containers, navbar, and form.
 
+## Basic HTML CSS
+This page was used to show animation from images that was styled with css nth-child, keyframes, containers.
+
 
 
 
