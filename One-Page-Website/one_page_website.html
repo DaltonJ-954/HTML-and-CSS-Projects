@@ -1,114 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Dolhpins Fan page</title>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<script defer src="JS/one_page_website.js"></script>
+		<title>Dolhpins Fan page</title>
 	</head>
 <body>
-	<div id="home">
-		<div>
-			<div>
-				<span><h1>Dolphin's Zone</h1></span>
+
+	<div class="row">
+		<div class="grid-container">
+			<div class="column">
+				<img src="images/Chubb_small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/Tua_small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/MikeD_small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="images/JWill_small.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
 			</div>
 		</div>
 	</div>
-     <nav>
-         <ul>
-            <a href="#home" id="link"><li>HOME</li></a>
-			<a href="#team photos"><li>Team Photos</li></a>
-			<a href="#team videos"><li>Team Videos</li></a>
-			<a href="#contact us"><li>Contact Us</li></a>
-		</ul>
-    </nav>
-
-    
-<!-- Pics I saved from the Dolphins webpage -->
-
-<section>
-	<div id="team photos">
-		<h1>Team Photos</h1>
-			<div>
-				<p><img src="Chubb.jpg" alt="Bradley Chubb"></p>
-				<div>
-					<p>Bradley Chubbs is a startring outside linebacker for the Miami Dolphins</p>
-				</div>
-			</div>
-			<div>
-					<p><img src="jwill.jpg" alt="Jeffery Wilson"></p>
-				<div>
-					<p>Jeffery Wilson Jr is a runningback for the Miami Dolphins</p>
-				</div>
-			</div>
-			<div>
-					<p><img src="MikeD.jpg" alt="Mike McDaniel"></p>
-				<div>
-					<p>McDaniel is the headcoach of the Miami Dolphins</p>
-				</div>
-			</div>
-	</div>
-</section>
-<!-- Videos from the Dolphins YT channel -->
-
-<section>
-	<div id="team videos">
-	<h1>Team Videos</h1>
-		<div>
-			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/_cN4hXYkouQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<div>
-					<p>Jeffery Wilson Jr. scores his first TD as a member of the Dolphins.</p>
-				</div>
-			</div>
+	  
+	  <!-- The Modal/Lightbox -->
+	  <div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	  
+		  <div class="mySlides">
+			<div class="numbertext">1 / 4</div>
+			<img src="images/Chubb.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="images/Tua.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="images/MikeD.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="images/JWill.jpg" style="width:100%">
+		  </div>
+	  
+		  <!-- Next/previous controls -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  
+		  <!-- Caption text -->
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+	  
+		  <!-- Thumbnail image controls -->
+		  <div class="column">
+			<img class="demo" src="./images/Chubb_small.jpg" onclick="currentSlide(1)" alt="">
+		  </div>
+	  
+		  <div class="column">
+			<img class="demo" src="./images/Tua_small.jpg" onclick="currentSlide(2)" alt="">
+		  </div>
+	  
+		  <div class="column">
+			<img class="demo" src="./images/MikeD_small.jpg" onclick="currentSlide(3)" alt="">
+		  </div>
+	  
+		  <div class="column">
+			<img class="demo" src="./images/JWill_small.jpg" onclick="currentSlide(4)" alt="">
+		  </div>
 		</div>
-		<div>
-			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/_2ac5on4Tu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<div>
-					<p>Jaylen Waddle talks smack to the Buffalo Bills defense.</p>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/w_i4P35-0XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<div>
-					<p>Coach McDaniels gives the entire team the game ball for the win over Bills.</p>
-				</div>
-			</div>
-		</div>
-</section>
+	  </div>
 
-<!-- Table element used for Dolphins theme -->
+		<section>
+			<div id="team videos">
+			<h1 class="title">Team Videos</h1>
+				<div>
+					<div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/_cN4hXYkouQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div>
+							<p>Jeffery Wilson Jr. scores his first TD as a member of the Dolphins.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/_2ac5on4Tu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div>
+							<p>Jaylen Waddle talks smack to the Buffalo Bills defense.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/w_i4P35-0XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div>
+							<p>Coach McDaniels gives the entire team the game ball for the win over Bills.</p>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!-- Table element used for Dolphins theme -->
 		
-	<section>
-	<div id="contact us">
-		
-		
-			<h3>Sign up to Fins Wave</h3>
-		<form>
-			<ul>
-				<li>Your Name <input type="text" name="First Name" placeholder="e.g. john doe"></li>
-				<li>Email <input type="text" name="Email" placeholder="Name@Domain.com"></li>
-				<li>Phone Number <input type="text" name="Phone Number" placeholder="Enter"></li>
-			</ul>
-		</form>
-		
-		<h1>Contact Us</h1>
-		<table border="1" cellpadding="5" cellspacing="5">
-			<tr>
-				<th>Main Number</th>
-				<th>Email</th>
-				<th>Social Media</th></tr>
-			</tr>
-			<tr>
-				<th>1-800-FINS-TIX</th>
-				<th>Last@miamidolphins.com</th>
-				<th><a href="https://twitter.com/MiamiDolphins">https://twitter.com/MiamiDolphins</a></th>
-			</tr>
-		</table>
-	</div>
-	</section>
+		<section>
+		<div id="contact us">
+			
+			
+				<h3 class="title">Sign up to Fins Wave</h3>
+				<form class="container">
+					<ul>
+						<li>Your Name <input type="text" name="First Name" placeholder="e.g. john doe"></li>
+						<li>Email <input type="text" name="Email" placeholder="Name@Domain.com"></li>
+						<li>Phone Number <input type="text" name="Phone Number" placeholder="Enter"></li>
+					</ul>
+				</form>
+			
+			<h1>Contact Us</h1>
+			<table border="1" cellpadding="5" cellspacing="5">
+				<tr>
+					<th>Main Number</th>
+					<th>Email</th>
+					<th>Social Media</th></tr>
+				</tr>
+				<tr>
+					<th>1-800-FINS-TIX</th>
+					<th>Last@miamidolphins.com</th>
+					<th><a href="https://twitter.com/MiamiDolphins">https://twitter.com/MiamiDolphins</a></th>
+				</tr>
+			</table>
+		</div>
+		</section>
 
 
 			

@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<style>
+			button {
+				height: 70px;
+				border-radius: 3px;
+				border: 1px solid darkslategray;
+				background-color: transparent;
+				font-size: 3.2rem;
+				color: black;
+				background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.6));
+				text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+				/*Each value below is separated by a comma ',' after the rgba values*/
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05),
+				inset 0 1px 0 0 rgba(255, 255, 255, .05),
+				inset 0 -1px 0 0 rgba(255, 255, 255, .05),
+				0 1px 0 0 rgba(255, 255, 255, .05);
+			}
+
+			button:hover {
+				color: goldenrod;
+				opacity: 0. 4;
+				border-radius: 6px 6px 6px 6px;
+				transition: 1s;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
 <body>
     <button onclick="My_First_Function()"">
 	    Click me!
 	</button>
 	<p id="Irish"></p>
-<script>
-
-</script>
 </body>
 </html>
