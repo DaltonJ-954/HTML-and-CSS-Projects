@@ -40,6 +40,9 @@
         <div class="container">
           <h1 class="display-4 text-light">Academy Cinemas</h1>
           <p class="lead text-light">Sit back, relax, and enjoy the show!</p>
+          <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+          Movie Deals</h1><!--Movie Deals-->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
         </div>
       </div>
 
@@ -89,6 +92,10 @@
               <div class="card col-4">
                <img src="./img/sputnik.jpg" class="card-img-top" alt="Sputnik">
                 <div class="card-body">
+                  <!--Bootstrap Iframe embeded class-->
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oGgtRsvq6hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
                   <h5 class="card-title" id="nik">Sputnik</h5>
                   <p class="card-text">Summoned to a secluded research facility, a controversial young doctor examines a cosmonaut
                     who returned to Earth with an alien parasite inside of him.</p>
@@ -103,6 +110,10 @@
             <div class="card col-4">
               <img src="./img/lastsur.jpg" class="card-img-top" alt="Last">
               <div class="card-body">
+                <!--Bootstrap Iframe embeded class-->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J82AOcHSD40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <h5 class="card-title" id="surv">Last Survivors</h5>
                 <p class="card-text">Troy and his son Jake have been living off the grid for over twenty years.
                 Every day is a fight for survival with Troy warning his son of dire consequences should he go beyond the barriers of the
@@ -118,6 +129,10 @@
             <div class="card col-4">
               <img src="./img/cosmic.jpg" class="card-img-top" alt="Cosmic">
               <div class="card-body">
+                <!--Bootstrap Iframe embeded class-->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MNxsB6o6DJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <h5 class="card-title" id="sin">Cosmic Sin</h5>
                 <p class="card-text">Seven rogue soldiers launch a preemptive strike against a newly discovered alien civilization in the hopes
                 of ending an interstellar war before it starts.</p>
@@ -134,16 +149,61 @@
   </div>             
       <!-- End Showtimes --> 
 
-      <div class="text-center">
-            <form>
-                <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <div class="row">
+          <div class="container text-center col-sml-6" id="deals">
+            <div class="container text-center">
+                <h1 class="display-5 my-4 col-lg-auto text-primary">Stay current on movies!</h1>
+                <div class="input-group mb-5 input-group-sm">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group=btn">
+                      <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receivee great movie reward deals!">Sign Up!</button>
+                    </span>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
+          </div>
       </div>
+      <!--Sign up form modal-->
+      <div class="modal fade" id="register">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to receive movie deals.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            
+            <form>
+              <fieldset class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Email...">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" id="password" placeholder="Password...">
+              </fieldset>
+            </form>
 
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Sign up form modal end-->
+      <!-- Footer-->
       <div class="container my-5">
             <ul class="nav">
               <li class="nav-item" id="movie">
@@ -177,5 +237,11 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <script>
+          $('.popover-dismiss').popover({
+          trigger: 'focus'
+          })
+      </script>
   </body>
 </html>
