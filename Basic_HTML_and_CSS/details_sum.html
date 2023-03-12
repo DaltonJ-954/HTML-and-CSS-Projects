@@ -1,6 +1,19 @@
 <!DOCTYPE html>
-<html>
-<title></title>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>Summary Validation</title>
+<script>
+	//Added jQuery to form
+	function validateForm() { 
+	  let x = document.forms["myForm"].value;
+	  if (x == "") {
+		alert("The form must be filled out"); // Will notify if form comes back with empty input
+		return false; //Returns a false value
+	  }
+	}
+	</script>
+</head>
 <body>
     Details and summary tags
 	<details>
@@ -8,6 +21,14 @@
 	<p>The details and summary tags are used to provide discriptions</p>
 	</details>
 <time>November 9 2022</time>
+<!--Form created for jQuery function-->
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+	Name:&nbsp &nbsp &nbsp &nbsp<input type="text" name="fname"><br><br>
+	Contact:  &nbsp &nbsp<input type="text" name="contact"><br><br>
+	Password: <input type="text" name="password"><br><br>
+	<input type="submit" value="Submit">
+  </form>
+  
 
 </body>
 </html>

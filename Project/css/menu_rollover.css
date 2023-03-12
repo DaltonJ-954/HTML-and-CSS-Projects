@@ -1,5 +1,5 @@
 
-<body> {
+body {
     background: #184352;
 }
 
@@ -16,7 +16,7 @@
     /* To the top edge of the screen */
     position: absolute;
     width: 100%;
-    background-color: #184352;
+    background-color: dimgray;
 }
 
 .menu {
@@ -41,7 +41,7 @@
 }
 
 .menu li:hover {
-    background-color: #5EAFDF;
+    background-color: yellow;
     color: #fff;
 }
 
@@ -76,3 +76,22 @@
     background-color: #5EAFDF;
 }
 
+image {
+   padding: 0px 0px 0px 20px;
+}
+
+@keyframes zoominoutsinglefeatured {
+    10% {
+        transform: scale(1,1);
+    }
+    60% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.single-featured-image-header img {
+	animation: zoominoutsinglefeatured 15s forwards;
+}

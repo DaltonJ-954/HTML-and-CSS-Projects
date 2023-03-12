@@ -5,15 +5,52 @@
   </head>
   <body>
 <style>
-h2:after {
-  content: ' \00A7';
+#slideshow { 
+  margin: 50px auto; 
+  position: relative; 
+  width: 240px; 
+  height: 240px; 
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
 }
 </style>
+
     <h2>Quotes from Spiderman</h2>
     <p>With great power, comes great responsibility!</p>
 	<p><em>My fault, all my fault! If only I had stopped him when I could have! But I didn't, and now...Uncle Ben...is dead.</em></p>
 	
+  <div id="slideshow">
+    <div>
+      <img src="../Basic_HTML_and_CSS/spidey_1.jpg">
+    </div>
+    <div>
+      <img src="../Basic_HTML_and_CSS/spidey_2.jpg">
+    </div>
+    <div>
+      Pretty cool eh? This slide is proof the content can be anything.
+    </div>
+  </div>
+  
 	<a href="https://youtu.be/DxqBKiY6wFA" target="new">SpideyTube</a>
-	
+  <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() { 
+      $('#slideshow > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+    }, 3000);
+  </script>
   </body>
 </html>

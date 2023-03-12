@@ -2,6 +2,7 @@
 <html>
 <head>
    <title>VG Talk</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <style>
 p {
@@ -42,7 +43,26 @@ body {
 
 
 </style>
+
+<script>
+$("img")
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("#3, #1").fadeOut();
+  });
+  $(".btn2").click(function(){
+    $("#3, #1").fadeIn();
+  });
+});
+</script>
+</head>
 <body>
+
+<p id='2'>This is a paragraph.</p>
+
+<button class="btn1">Fade out</button>
+<button class="btn2">Fade in</button>
+
 
    <label for="options">Console Options:</label>
          <select name="options" id="options">
@@ -53,7 +73,7 @@ body {
          </select>
 
 <h1>Is Sonic the Hedgehog BACK?!</h1>
-<p>Since it's debut in 1991, Sonic has been a popular character in the gamesphere.
+<p id='1'>Since it's debut in 1991, Sonic has been a popular character in the gamesphere.
    Yet, that didn't stop Sega from fumbling the franchise throughout the
    years of it's existance.</p>
    

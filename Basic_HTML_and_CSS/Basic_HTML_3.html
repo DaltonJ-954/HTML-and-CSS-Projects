@@ -1,16 +1,41 @@
 <!DOCTYPE HTML>
 <html>
+<head>
    <title>Christmas Spirits</title>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
    <body>
-      <style>
+      <style type="text/css">
+		#fadeI {
+			border: 1px solid black;
+			display: none;
+		}
+		#fadeO {
+			border: 1px solid black;
+		}
+
 	  h1 {color:red;}
 	  </style>
-	  <h1>Holiday Cheers</h1>
-	  <p>What brings on joy during the holidays? Family, friends, and gifts spread amongst everyone with love.</p>
+	  <!--FadeIn function-->
+	  <button id="fadein-btn">Fade In</button>
+	  <h1 id="fadeO">Holiday Cheers</h1>
+	  <p id="fadeI">What brings on joy during the holidays? Family, friends, and gifts spread amongst everyone with love.</p>
 	  
-	  <h2>What does Christmas stands for?</h2>
+	  <!--FadeOut function-->
+	  <h2 id="fadeO">What does Christmas stands for?</h2>
 	  <div style="color: green">
-	    <p>Christmas is an annual festival, on which Christians commemorate the birth of Jesus Christ, observed primarily on December 25 [a] as a religious and cultural celebration among billions of people around the world.</p>
+	    <p id="fadeI">Christmas is an annual festival, on which Christians commemorate the birth of Jesus Christ, observed primarily on December 25 [a] as a religious and cultural celebration among billions of people around the world.</p>
 		</div>
+		<button id="fadeout-btn">Fade Out</button>
+		<!--jQuery-->
+		<script type="text/javascript">
+			$("#fadein-btn").click(function(){
+      			$("#fadeI").fadeIn(2000);
+     	})
+ 
+     		$("#fadeout-btn").click(function(){
+      			$("#fadeO").fadeOut(2000);
+     })
+		</script>
    </body>
 </html>

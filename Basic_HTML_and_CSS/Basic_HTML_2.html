@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
 <body>
-    <button onclick="My_First_Function()"">
-	    Click me!
-	</button>
-	<p id="Irish"></p>
-<script>
-    function My_First_Function() {
-	    var String = "Kiss me, I'm Irish";
-		var result = String.fontcolor("green");
-		document.getElementById("Irish").innerHTML =
-		results;
-	}
-</script>
+	<p>General Mills Cereal</p>
+	<button id="clover">Click Here!</button>
+	<h1 id="lucky">They're Magically Delicious!</h1>
+	<img src="https://i.pinimg.com/736x/30/49/d3/3049d39649151d0a76b2bf1f82f0850f.jpg" alt="Leprechaun">
+	<script>
+		var String = ("Hug me, I'm Irish ");
+		var Along = ("and I also love green!");
+
+		document.getElementById("lucky").innerHTML = String + Along;
+	</script>
 </body>
 </html>

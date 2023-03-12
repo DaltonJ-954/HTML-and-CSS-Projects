@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html>
-<title>Tech Academy Form</title>
+<html lang="en">
+	<meta charset="utf-8">
+	<head>
+		<title>Tech Academy Form</title>
+		<link rel="stylesheet" type="text/css" href="./CSS/form.css">
+	</head>
 <body>
 
-<h1>Fill out information</h1>
-<p>This is a paragraph.</p>
-<form action="" method="get">
-    First name: <input type="text" name="First Name"><br>
-	Last name: <input type="text" name="Last Name"><br>
-	Gender: <input type="text" name="Gender"><br>
-	Race: <input type="text" name="Race"><br>
-	Program course: <input type="text" name="Program Course"><br>
-		<input type="submit" value="Submit">
-</form>
+	<div id="myDIV" class="header">
+		<h2>My To Do List</h2>
+		<input type="text" id="myInput" placeholder="Add Event...">
+		<span onclick="newElement()" class="addBtn">Add</span>
+	  </div>
+	  
+	  <ul id="myUL">
+		<li>Hit the gym</li>
+		<li class="checked">Pay bills</li>
+		<li>Meet George</li>
+		<li>Buy eggs</li>
+		<li>Read a book</li>
+		<li>Organize office</li>
+	  </ul>
+
 </body>
 </html>
