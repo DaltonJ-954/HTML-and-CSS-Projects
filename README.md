@@ -1,6 +1,5 @@
 # HTML and CSS Projects
-Repository for new course
-This new repository is for future projects in this course.
+A repository for future projects in HTML & CSS course. Learn the basics of web-page design and how to style your pages with CSS.
 # Project
 
 - [My Portfolio](https://github.com/DaltonJ-954/DaltonJ-954.Github.IO)
