@@ -1,6 +1,6 @@
 # HTML and CSS Projects
 A repository for future projects in HTML & CSS course. Learn the basics of web-page design and how to style your pages with CSS.
-# Project
+# Projects
 
 - [My Portfolio](https://github.com/DaltonJ-954/DaltonJ-954.Github.IO)
 * [Space Station](https://github.com/DaltonJ-954/DaltonJ-954.Github.IO/blob/main/Space_Station.html)
