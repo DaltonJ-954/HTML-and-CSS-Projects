@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./rotate.css">
-
     <title>Academy Cinemas</title>
   </head>
   <body>
@@ -27,13 +27,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link text-light" href="#about">About</a>
+                    <a class="nav-link text-light" href="#about"><button type="button" class="btn btn-primary">About</button></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link text-light" href="#here">Showtimes</a>
+                    <a class="nav-link text-light" href="#here"><button type="button" class="btn btn-warning">Showtimes</button></a>
                   </li> 
                   <li class="nav-item active">
-                    <a class="nav-link text-light" href="#movie">Deals</a>
+                    <a class="nav-link text-light" href="#movie"><button type="button" class="btn btn-danger">Deals</button></a>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -46,12 +46,12 @@
       <div class="jumbotron jumbotron-fluid bg-info text-center">
         <div class="container">
           <h1 class="display-4 text-light">
-            <span class="rotatingText-adjective">Relax</span>
-            <span class="rotatingText-adjective">and Enjoy the Show!</span>
-            <span class="rotatingText-adjective" style="font-size: 60px; color: rgb(47, 104, 235);">Academy Cinemas</span>
+            <span class="rotatingText-adjective" style="color: rgb(47, 104, 235);" >Relax</span>
+            <span class="rotatingText-adjective" style="color: goldenrod;" >and Enjoy the Show!</span>
+            <span class="rotatingText-adjective" style="font-size: 50px; color: rgb(239, 43, 43);">Academy Cinemas</span>
           </h1>
-          <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
-          Movie Deals</h1><!--Movie Deals-->
+          <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family: Poppins;font-weight:900;text-transform:uppercase;">
+          >> Movie Deals <<</h1><!--Movie Deals-->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
         </div>
       </div>
@@ -93,12 +93,9 @@
 
             <!-- Showtimes -->
 
-    
 <div class="container">
   <h1 id="here" class="my-5">Showtimes:</h1>
       <div class="row">
-        
-            
               <div class="card col-4">
                <img src="./img/sputnik.jpg" class="card-img-top" alt="Sputnik">
                 <div class="card-body">
@@ -141,7 +138,7 @@
               <div class="card-body">
                 <!--Bootstrap Iframe embedded class-->
                 <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MNxsB6o6DJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/H1jR3qb0vMg?si=arNKbK1dq2cFDwBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <h5 class="card-title" id="sin">Cosmic Sin</h5>
                 <p class="card-text">Seven rogue soldiers launch a preemptive strike against a newly discovered alien civilization in the hopes

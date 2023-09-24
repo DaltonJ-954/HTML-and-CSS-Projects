@@ -42,12 +42,14 @@
     animation-name: rotate;
     animation-duration: 1.5s;
     animation-delay: .5s;
+    font-family: Poppins;
 }
   
   .rotatingText-adjective:nth-of-type(2) {
     animation-name: rotate;
     animation-duration: 1.5s;
     animation-delay: 1.75s;
+    font-family: Poppins;
 }
   
   .rotatingText-adjective:nth-of-type(3) {
@@ -55,6 +57,7 @@
     animation-duration: 1.5s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    font-family: Poppins;
 }
 
 @keyframes rotate-last {
@@ -67,4 +70,8 @@
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
+}
+
+body {
+  background-color: azure;
 }
