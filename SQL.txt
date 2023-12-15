@@ -1,4 +1,3 @@
-
 Animal_ID	Species	Genus	Family	Diet	Order	LifeSpan	Habitat
 1	Orca	null	null	Seal	null	null	Ocean
 2	Lion	null	null	Wilderbeast	null	null	Saharah
@@ -26,3 +25,4 @@ Persons	0
 Client_Data	0
 Types_of_Things	3
 Mysore_Zoo	10
+

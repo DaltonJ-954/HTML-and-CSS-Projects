@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container
+{
+    width: 100%;
+    min-height: 200vh;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Earth-From-Space-HD-Backgrounds.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo
+{
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul
+{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li
+{
+    display:inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    color: lightblue;
+}
+
+.about
+{ 
+    margin-top: 15%;
+    display: flex;
+    width: 1340px;
+}
+
+h3
+{
+    color: crimson;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.info-right
+{
+    margin-left: 10%;
+}
+
+.btn-explore
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: crimson;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-search
+{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-explore img
+{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.btn-explore:hover
+{
+    background: royalblue;
+}
+
+.btn-explore:active
+{
+    background: orange;
+}
+
+.content
+{
+    margin-top: 10%;
+    color: #fff;
+    max-width: 620px;
+}
+
+.content h1
+{
+    font-size: 70px;
+    font-weight: 650;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+
+.content input
+{
+    border-radius: 5px;
+    margin-top: 1%;
+    padding: 6px;
+}
