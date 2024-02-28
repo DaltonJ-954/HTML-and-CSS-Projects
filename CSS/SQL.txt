@@ -1,0 +1,28 @@
+Animal_ID	Species	Genus	Family	Diet	Order	LifeSpan	Habitat
+1	Orca	null	null	Seal	null	null	Ocean
+2	Lion	null	null	Wilderbeast	null	null	Saharah
+3	Zebra	null	null	Grass	null	null	Grasslands
+4	Crocodile	null	null	Small_Mammal	null	null	Semi-Aquatic
+5	Hyena	null	null	Zebras	null	null	Savannah
+6	Elephant	null	null	Vegetation	null	null	Grasslands
+7	Tiger	null	null	Antelope	null	null	Rain-Forest
+8	Python	null	null	Rodents	null	null	Tropics
+9	Chimpanzee	null	null	Fuits	null	null	Rain-Forest
+10	Rhinoceros	null	null	Grasses	null	null	Savannah
+
+
+
+Tablename	Records
+Customers	0
+Categories	8
+Employees	10
+OrderDetails	518
+Orders	196
+Products	77
+Shippers	3
+Suppliers	29
+Persons	0
+Client_Data	0
+Types_of_Things	3
+Mysore_Zoo	10
+

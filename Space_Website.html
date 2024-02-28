@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200&display=swap');">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" 
     integrity="sha512-yTQco+bfznY4RhcDhG+vURAOIK6cuC6RqSk22bwmZpXk7m/WyjFSyexMygCF6ZWzDBBDOwOGDtjdC0DGtP3+HQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -12,50 +13,47 @@
     <title>Exploration of Space</title>
 </head>
 <body>
+
 <div class="container">
     <nav>
         <img src="https://i.pinimg.com/originals/36/bf/f5/36bff5a6a689fea29985068929ba0651.png" width="300px" height="200px" class="logo" alt="astronaut">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Famous Planets</a></li>
+            <li><a href="#">Celestial Finder</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
         <button class="btn-explore"><img src="../HTML-and-CSS-Projects/img/spaceship.png" alt="ship">Explore</button>
     </nav>
 
-    <div class="content">
-        <h1><span style="color: crimson;">Discover</span> <br>what the <span style="color: royalblue;">Universe</span> has to offer <span style="color: orange;">You</span></h1>
-        <p>Space seemingly has an infinite expanse that exist beyond Earth's atmosphere<br> that contains stars, planets, moons, galaxies, and other celestial bodies. <br>Plus so much more!</p>
-        <form action="">
-            <input type="text" placeholder="Enter Celestial Body">
-            <button type="submit" class="btn-search">Search</button>
-        </form>
+    <div class="flex-container">
+        <div class="content">
+            <h1><span style="color: crimson;">Discover</span> <br>what the <span style="color: royalblue;">Universe</span> has to offer <span style="color: orange;">You</span></h1>
+            <p>Space seemingly has an infinite expanse that exist beyond Earth's atmosphere<br> that contains stars, planets, moons, galaxies, and other celestial bodies. <br>Plus so much more!</p>
+            <form action="">
+                <input type="text" placeholder="Enter Celestial Body">
+                <button onclick="https//universe.nasa.gov/universe/basics/" class="btn-search">Search</button>
+            </form>
+        </div>
+        <div class="stage">
+            <div class="about">
+                <h3 class="h3-right">About Us</h3>
+                <p class="p-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio vero natus recusandae saepe, aut mollitia necessitatibus
+                    velit earum quisquam praesentium ipsum quibusdam dolorem nisi officiis? Quibusdam explicabo voluptatibus officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio vero natus recusandae saepe, aut mollitia necessitatibus
+                    velit earum quisquam praesentium ipsum quibusdam dolorem nisi officiis? Quibusdam explicabo voluptatibus officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio vero natus recusandae saepe, aut mollitia necessitatibus
+                    velit earum quisquam praesentium ipsum quibusdam dolorem nisi officiis? Quibusdam explicabo voluptatibus officiis.<br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio vero natus recusandae saepe, aut mollitia necessitatibus
+                    velit earum quisquam praesentium ipsum quibusdam dolorem nisi officiis? Quibusdam explicabo voluptatibus officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio vero natus recusandae saepe, aut mollitia necessitatibus
+                    velit earum quisquam praesentium ipsum quibusdam dolorem nisi officiis? Quibusdam explicabo voluptatibus officiis.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="about">
-        <div class="info-left">
-            <h3>The Story</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas minus, libero earum a at dolor<br>
-            excepturi dolorum impedit. Ducimus autem provident corporis veritatis. Eveniet quia placeat voluptas magni sit totam?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas minus, libero earum a at dolor<br>
-            excepturi dolorum impedit. Ducimus autem provident corporis veritatis. Eveniet quia placeat voluptas magni sit totam?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas minus, libero earum a at dolor<br>
-            excepturi dolorum impedit. Ducimus autem provident corporis veritatis. Eveniet quia placeat voluptas magni sit totam?</p>
-        </div>
-        <div class="info-right">
-            <h3>About Us</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas minus, libero earum a at dolor<br>
-                excepturi dolorum impedit. Ducimus autem provident corporis veritatis. Eveniet quia placeat voluptas magni sit totam?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas minus, libero earum a at dolor<br>
-                excepturi dolorum impedit. Ducimus autem provident corporis veritatis. Eveniet quia placeat voluptas magni sit totam?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas minus, libero earum a at dolor<br>
-                excepturi dolorum impedit. Ducimus autem provident corporis veritatis. Eveniet quia placeat voluptas magni sit totam?</p>
-        </div>
-    </div>
+    
 
 </div>
-
-
 </body>
 </html>
