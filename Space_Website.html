@@ -32,7 +32,7 @@
             <p>Space seemingly has an infinite expanse that exist beyond Earth's atmosphere<br> that contains stars, planets, moons, galaxies, and other celestial bodies. <br>Plus so much more!</p>
             <form action="">
                 <input type="text" placeholder="Enter Celestial Body">
-                <button onclick="https//universe.nasa.gov/universe/basics/" class="btn-search">Search</button>
+                <button onclick="window.location.href=''" class="btn-search" type="button">Search</button>
             </form>
         </div>
         <div class="stage">
@@ -52,8 +52,16 @@
         </div>
     </div>
 
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1" class="thumbnail" onclick="openLightbox('image1.jpg')">
+        <img src="image2.jpg" alt="Image 2" class="thumbnail" onclick="openLightbox('image2.jpg')">
+        <img src="image3.jpg" alt="Image 3" class="thumbnail" onclick="openLightbox('image3.jpg')">
+      </div>
     
-
+      <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img src="" alt="" class="lightbox-content" id="lightbox-img">
+      </div>
 </div>
 </body>
 </html>
